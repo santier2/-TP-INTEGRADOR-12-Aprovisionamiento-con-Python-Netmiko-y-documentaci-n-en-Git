@@ -63,8 +63,6 @@ sudo ip route add default via 10.10.12.1
 
 
 ### PC Remota (Gestión, Windows/Linux)
-
-# Windows (PowerShell)
 ```bash
 ip 10.10.12.6 255.255.255.248 10.10.12.1
 ```
