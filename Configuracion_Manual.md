@@ -202,13 +202,9 @@ write memory
 
 ## ✅ Verificación desde PC Sysadmin o PC Remota
 ```bash
-ping -c 3 10.10.12.1
-ping -c 3 10.10.12.2
-ping -c 3 10.10.12.3
-ping -c 3 10.10.12.4
+ping 10.10.12.1
+ping 10.10.12.2
+ping 10.10.12.3
+ping 10.10.12.4
 
-ssh admin@10.10.12.2   # prueba acceso SSH a SW1
-ssh admin@10.10.12.3   # prueba acceso SSH a SW2
-ssh admin@10.10.12.1   # R1
-ssh admin@10.10.12.4   # R2
 ```
