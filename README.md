@@ -63,21 +63,19 @@ sudo ip route add default via 10.10.12.1
 
 
 ### PC Remota (Gestión, Windows/Linux)
-```bash
 
 # Windows (PowerShell)
+```bash
 ip 10.10.12.6 255.255.255.248 10.10.12.1
-
-
+```
 ### PC Visitantes (VLAN 232, Windows/Linux)
 ```bash
 # Windows (PowerShell)
 ip 10.10.12.82 255.255.255.248 10.10.12.81
-
+```
 ---
 
-## 🔹 Script Netmiko (`Red Vlan Config.py`)
-
+###  🔹 Script Netmiko (`Comandos.py`)
 
 ### Objetivo
 Automatizar la configuración de:
@@ -85,7 +83,6 @@ Automatizar la configuración de:
 - Trunks entre SW1–R1, SW2–R2, R1–R2.
 - Subinterfaces en R1 con direccionamiento, NAT y DHCP.
 - R2 como bridge transparente para todas las VLANs de usuario.
-
 
 ### Ejecución
 ```bash
