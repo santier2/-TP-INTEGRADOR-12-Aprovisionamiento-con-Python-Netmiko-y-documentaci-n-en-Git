@@ -1,5 +1,7 @@
 # 📘 Configuración Manual Inicial
 
+![][https://github.com/santier2/-TP-INTEGRADOR-12-Aprovisionamiento-con-Python-Netmiko-y-documentaci-n-en-Git/blob/main/Red.PNG]
+
 **Objetivo:** que la PC Sysadmin y la PC remota puedan hacer ping y entrar por SSH a:
 - **SW1** (Switch Principal)  
 - **SW2** (Switch Remoto)  
