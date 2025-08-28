@@ -1,7 +1,57 @@
 # -TP-INTEGRADOR-12-Aprovisionamiento-con-Python-Netmiko-y-documentaci-n-en-Git
 
 Este repositorio contiene la configuración de red para un escenario con switches Cisco, routers MikroTik y PCs conectadas en distintas VLANs. Incluye:
+- Configuración manual inicial de los equipos.
+- Script en Python con Netmiko para automatizar la configuración.
+- Subnetting aplicado con VLSM.
 
+
+---
+
+
+## 🔹 Subredes documentadas
+
+
+### VLAN Gestión (ID 1299)
+- Dirección de red: **10.10.12.0/29**
+- Máscara: **255.255.255.248**
+- Rango de hosts válidos: **10.10.12.1 – 10.10.12.6**
+- Broadcast: **10.10.12.7**
+- Gateway: **10.10.12.1 (R1)**
+
+
+### VLAN Ventas (ID 230)
+- Dirección de red: **10.10.12.32/27**
+- Máscara: **255.255.255.224**
+- Rango de hosts válidos: **10.10.12.33 – 10.10.12.62**
+- Broadcast: **10.10.12.63**
+- Gateway: **10.10.12.33 (R1)**
+
+
+### VLAN Técnica (ID 231)
+- Dirección de red: **10.10.12.64/28**
+- Máscara: **255.255.255.240**
+- Rango de hosts válidos: **10.10.12.65 – 10.10.12.78**
+- Broadcast: **10.10.12.79**
+- Gateway: **10.10.12.65 (R1)**
+
+
+### VLAN Visitantes (ID 232)
+- Dirección de red: **10.10.12.80/29**
+- Máscara: **255.255.255.248**
+- Rango de hosts válidos: **10.10.12.81 – 10.10.12.86**
+- Broadcast: **10.10.12.87**
+- Gateway: **10.10.12.81 (R1)**
+
+
+### VLAN Nativa (ID 239)
+- Usada para enlaces trunk nativos (sin direccionamiento IP).
+
+
+---
+
+
+## 🔹 Configuración de PCs
 
 ### PC Sysadmin (Gestión, Linux)
 ```bash
